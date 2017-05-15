@@ -8,6 +8,7 @@ type AppProps = {|
 const App = ( { children }: AppProps ) => (
   <div>
     <Head>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css' />
     </Head>
     {children}
