@@ -1,24 +1,30 @@
 // @flow
+import * as React from 'react'
 import Head from 'next/head'
 
-type AppProps = {|
-  children?: any
+type Props = {|
+  children?: React.Node
 |}
 
-const App = ( { children }: AppProps ) => (
+const App = ({ children }: Props) => (
   <div>
     <Head>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css' />
+      <link
+        rel="stylesheet"
+        href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.12/semantic.min.css"
+      />
     </Head>
     {children}
     <style jsx global>{`
       * {
-        font-family: Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, serif;
+        font-family: Menlo, Monaco, 'Lucida Console', 'Liberation Mono',
+          'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New',
+          monospace, serif;
       }
+      html,
       body {
-        margin: 0;
-        padding: 25px 50px;
+        background: #f7f7f7;
       }
     `}</style>
   </div>

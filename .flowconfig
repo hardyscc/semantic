@@ -1,5 +1,6 @@
 [ignore]
-.*/node_modules/babel-plugin-transform-react-remove-prop-types/.*
+.*/node_modules/npmconf/.*
+.*/node_modules/config-chain/.*
 
 [include]
 
