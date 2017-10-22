@@ -17,11 +17,6 @@ const App = ({ children }: Props) => (
     </Head>
     {children}
     <style jsx global>{`
-      * {
-        font-family: Menlo, Monaco, 'Lucida Console', 'Liberation Mono',
-          'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New',
-          monospace, serif;
-      }
       html,
       body {
         background: #f7f7f7;
