@@ -16,12 +16,6 @@ const App = ({ children }: Props) => (
       />
     </Head>
     {children}
-    <style jsx global>{`
-      html,
-      body {
-        background: #f7f7f7;
-      }
-    `}</style>
   </div>
 )
 
